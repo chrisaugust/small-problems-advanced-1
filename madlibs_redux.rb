@@ -39,13 +39,20 @@
 #
 #
 # Code
-require 'test/unit'
-
-# class <Title> < Test::Unit::TestCase
-#   def test_<method_name>
-#     assert_equal(<method_name(arg)>, <expected results>)
+# require 'test/unit'
+# 
+# class MadblibsRevisited < Test::Unit::TestCase
+#   def test_madlibs
+#     noun = 'cat'
+#     verb = 'run'
+#     adjective = 'fat'
+#     adverb = 'casually'
+#     hsh = { noun: noun, verb: verb, adverb: adverb, adjective: adjective }
+#     text = """This %{adjective} %{noun} is one which loves to %{verb} %{adverb} for Thanksgiving"""
+#     assert_equal(madlibs(text,hsh), "This #{adjective} #{noun} is one which loves to #{verb} #{adverb} for Thanksgiving")
 #   end
 # end
+# 
 
 words_hash = { noun: %w(dog cat bird fish tiger elephant lizard),
                verb: %w(read jump lounge sing fly philosophize kibbutz calculate),
@@ -63,4 +70,6 @@ def madlibs(text, words_hash)
   end
 end
 
-10.times { madlibs('madlibs.txt', words_hash); puts }
+10.times do
+  madlibs("madlibs.txt", words_hash)
+end

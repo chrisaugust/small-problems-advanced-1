@@ -1,1 +1,3 @@
-This %{adjective} %{noun} is one which loves to %{verb} %{adverb} during the full moon
+By %{verb}ing %{adverb} through the town, 
+the %{adjective} %{noun} inspires and challenges,
+which usually has a %{adjective} effect on the %{noun}s.
